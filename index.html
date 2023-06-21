@@ -1,0 +1,53 @@
+<html>
+<head>
+  <title>Payment QR Code Gateway</title>
+  <script src="https://cdn.jsdelivr.net/npm/qrious@4.0.2/dist/qrious.min.js"></script>
+</head>
+<body>
+<center><img src="https://see.fontimg.com/api/renderfont4/JR3BM/eyJyIjoiZnMiLCJoIjo4OCwidyI6MjAwMCwiZnMiOjQ0LCJmZ2MiOiIjREY2RjMwIiwiYmdjIjoiI0ZGRkZGRiIsInQiOjF9/U2VjdXJlZCBieSBzc3k/easttiger-regular.png" width="100%"><br></center>
+<hr color=black size=4>
+<center><img src="https://media.tenor.com/DKSpwZW0AcsAAAAM/loading-money.gif" width="80%">
+  </center>
+
+  <h2><center>SCAN TO PAY:-</h2></center>
+    <center><img src="https://i.ibb.co/RpLwMD7/Screenshot-20230621-102634.jpg" width="50%"></center>
+<bR></BR>
+  <a href="https://satyam914.github.io/Payment-ssy-ip0.01.01./">
+<center><button type="submit"><font color=Red size=6>Done</font></button><center></a>
+  </form>
+
+  <div id="qrcode"></div>
+
+  <script>
+    // Generate QR code
+    var qr = new QRious({
+      element: document.getElementById('qrcode'),
+      size: 256
+    });
+
+    // Handle form submission
+    document.getElementById('paymentForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      var form = event.target;
+      var amount = form.amount.value;
+      var description = form.description.value;
+      var paymentData = 'Amount: ' + amount + ', Description: ' + description;
+
+      // Update QR code with payment data
+      qr.value = paymentData;
+
+      // Simulate payment processing (mock server-side implementation)
+      setTimeout(function() {
+        alert('Payment successful!'); // Replace with your actual payment processing logic
+      }, 2000);
+    });
+  </script><br></br>
+<br></br>
+<br></br>
+<h1>Ads
+<hr color=blue size=6>
+<iframe width="900" height="450" src="https://www.youtube.com/embed/oryU6dueoIk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" style="20px: red solid border; "<allowfullscreen></iframe>
+<hr color=blue size=6>
+
+</body>
+</html>
